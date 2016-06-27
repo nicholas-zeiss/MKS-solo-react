@@ -18,7 +18,7 @@ var App = (function() {
 	// point to the `#message` <div> in index.html.
 
 	var $message;
-  var $reminderTemplate;
+    var $reminderTemplate;
 
 	// HINT: this makes sure to fire the `init()` function at DOM-ready.
 

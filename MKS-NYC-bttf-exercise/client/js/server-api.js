@@ -16,7 +16,7 @@ var ServerAPI = (function() {
 			data: data,
 			dataType: "text",
 			cache: false,
-			success: function onSuccess(data){
+			success: function onSuccess(data){	
 				document.location.href = "http://localhost:8005/?sessionID=" + data;
 			},
 			error: function onError(jq,statusText,errText){
