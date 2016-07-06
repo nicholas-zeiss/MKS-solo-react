@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app='sudoku'>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sudoku</title>
+  </head>
+  <body>
+    <h1>The Nicholas Zeiss website for people who can't sudoku good and want to do other things good too</h1>
+    <h3>Notes: 0 denotes an undefined entry. Fill in your table and use the buttons to check its validity and display a solution. Or don't, I couldn't care less and you shouldn't do things just because a website tells you to.</h3>
+    <table border="1" cellspacing="30" width="100">
+    </table>
+
+    <input type="button" value="Check Validity" id="checkValid"/>
+    <input type="button" value="Display Solution" id="showSolution"/>
+    <input type="button" value="Clear Board" id="clearBoard"/>
+
+    <div id="messages">
+      <h3 class="warning">You think you're clever don't you you little shit? I can't solve an invalid board.</h3>
+      <h3 class="valid">The table is valid</h3>
+      <h3 class="invalid">The table is invalid</h3>
+      <h3 class="solved">Solution</h3>
+      <h3 class="unsolved">The board ain't got no solutions<h3>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>    
+    <script src="app/solver.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
